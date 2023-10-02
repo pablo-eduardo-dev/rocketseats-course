@@ -27,6 +27,7 @@ Curso realizado no Discover da Rocketseat. <br/>
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
+- SASS
 - JavaScript
 - Git e Github
 - Figma

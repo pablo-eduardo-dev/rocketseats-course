@@ -57,7 +57,6 @@
     position: relative;
     margin-top: 20px;
     width: 64px;
-    cursor: pointer;
     
   }
 
@@ -76,11 +75,16 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+
+    animation: slide-out .15s;
+  }
+
+  #switch button:hover {
+    outline: 8px solid var(--hover-dark);
   }
 
   .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in .15s forwards;
   }
 
   #switch span {
@@ -158,4 +162,25 @@
     text-align: center;
     color: var(--text-color);
     margin-top: 30px;
+  }
+
+
+  /* Animation */
+
+  @keyframes slide-in {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
   }
